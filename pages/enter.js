@@ -1,10 +1,11 @@
 import {auth, googleAuthProvider, firestore} from "../lib/firebase"
 import { doc, writeBatch, getDoc, getFirestore } from 'firebase/firestore';
 import { signInWithPopup, signInAnonymously, signOut } from 'firebase/auth';
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
 
 export default function EnterPage(props) {
-    const user = null;
-    const username = null;
+    const {user, username} = useContext(UserContext);
 
     //  1. user signed out <SignInButton />
 
