@@ -1,6 +1,11 @@
-export default function UserPage({}) {
+import UserProfile from "../../components/UserProfile";
+import PostFeed from "../../components/PostFeed";
+
+export default function UserProfilePage({user, posts}) {
     return(
         <main>
+            <UserProfile user={user} />
+            <PostFeed post={posts} />
         </main>
     )
 }
