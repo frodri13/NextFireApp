@@ -1,7 +1,7 @@
 import PostFeed from '../components/PostFeed';
 import Metatags from '../components/Metatags';
 import Loader from '../components/Loader';
-import { firestore, postToJSON, getIt } from '@lib/firebase';
+import { firestore, postToJSON, getIt } from "../lib/firebase";
 import { Timestamp, query, where, orderBy, limit, collectionGroup, getDocs, startAfter, getFirestore } from 'firebase/firestore';
 
 import { useState } from 'react';
